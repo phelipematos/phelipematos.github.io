@@ -1,157 +1,276 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PhelipeDev ñ PortfÛlio</title>
-    <meta name="description" content="PortfÛlio de PhelipeDev com projetos, sobre e contato." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav">
-        <a class="brand" href="#home">PhelipeDev</a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
-          <span></span>
-          <span></span>
-        </button>
-        <ul id="menu" class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+Ôªø<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phelipe Matos</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- Font Awesome para √≠cones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- CABE√áALHO -->
+    <header>
+        <nav>
+            <h1><span class="nome-phelipe">Phelipe</span><span class="nome-matos">Matos</span></h1>
+            <ul>
+                <li><a href="#inicio">In√≠cio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#English Version">English Version</a></li>
+                <li><a href="#Entre em contato" class="contato">Entre em contato</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- CONTE√öDO PRINCIPAL -->
     <main>
-      <section id="home" class="hero">
-        <div class="hero-text">
-          <p class="eyebrow">Front-End ï UI ï Performance</p>
-          <h1>
-            Ol·, eu sou o <span class="accent">PhelipeDev</span>.
-            Crio interfaces elegantes e responsivas.
-          </h1>
-          <p class="lead">
-            Este È um portfÛlio pronto para mostrar seus melhores projetos, com foco em clareza,
-            desempenho e um visual limpo.
-          </p>
-          <div class="hero-actions">
-            <a class="btn" href="#projetos">Ver projetos</a>
-            <a class="btn ghost" href="#contato">Fale comigo</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="avatar" aria-hidden="true">
-            <span>Foto</span>
-          </div>
-          <div class="hero-meta">
-            <p class="meta-title">Placeholder de foto</p>
-            <p class="meta-sub">Adicione sua imagem em /imagens</p>
-          </div>
-        </div>
-      </section>
+        <section id="inicio">
+            <div class="container-texto">
+                <h2>Ol√°</h2>
+                <h2 class="titulo-principal">Me chamo, <span class="nome-destaque">Phelipe Matos.</span></h2>
+                <h3>Desenvolvedor Front-End</h3>
+                <p>Sou um desenvolvedor web apaixonado por criar experi√™ncias digitais r√°pidas, responsivas e com foco em performance. Tenho s√≥lida experi√™ncia em projetos profissionais utilizando tecnologias modernas como HTML5, CSS3, JavaScript, React.js e Tailwind CSS. Sou apaixonado por desenvolver componentes reutiliz√°veis, Design Systems, anima√ß√µes fluidas e por evoluir continuamente a performance e acessibilidade das aplica√ß√µes web.</p>
+                <hr class="linha-divisoria">
+                <button>Download CV</button>
+                <button>Mais</button>
+            </div>
+            <div class="container-imagem">
+                <img src="Fundo roxo.png" alt="Foto de Phelipe Matos com fundo roxo">
+                                <div class="redes-container">
+                                    <div class="redes-wrapper">
+                                        <span class="redes-label">Redes Sociais</span>
+                                        <div class="redes-sociais">
+                                            <a class="icon-circle linkedin" href="https://linkedin.com/in/seu-linkedin" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+                                            <a class="icon-circle instagram" href="https://instagram.com/seu-instagram" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a class="icon-circle whatsapp" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+            </div>
+        </section>
 
-      <section id="sobre" class="section">
-        <div class="section-header">
-          <h2>Sobre</h2>
-          <p>Um resumo r·pido sobre sua experiÍncia, stack e objetivos.</p>
-        </div>
-        <div class="about">
-          <p>
-            Sou desenvolvedor Front-End com foco em HTML sem‚ntico, CSS moderno e experiÍncias
-            acessÌveis. Gosto de criar interfaces bonitas, r·pidas e f·ceis de usar.
-          </p>
-          <div class="chips">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>UI Design</span>
-            <span>Responsivo</span>
-          </div>
-        </div>
-      </section>
+        <section id="O que eu ofere√ßo" class="oferta-section-wrap">
+            <div class="oferta-header">
+                <span class="oferta-eyebrow">O que eu ofere√ßo</span>
+                <h2 class="oferta-title">
+                    <span>Crio designs profissionais de sites</span>
+                    <span>Orientados para necessidade do cliente</span>
+                </h2>
+                <div class="oferta-divider" aria-hidden="true"></div>
+            </div>
+            <div class="oferta-cards" role="list">
+                <button class="oferta-card is-dim" type="button" aria-pressed="false">
+                    <div class="oferta-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <span class="oferta-card-label">Design de Conte√∫do Web</span>
+                </button>
+                <button class="oferta-card is-active" type="button" aria-pressed="true">
+                    <div class="oferta-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <span class="oferta-card-label">Design de app mobile</span>
+                </button>
+                <button class="oferta-card is-dim" type="button" aria-pressed="false">
+                    <div class="oferta-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <span class="oferta-card-label">Web Design</span>
+                </button>
+            </div>
+            <div class="oferta-nav" aria-label="Navega√ß√£o de ofertas">
+                <button class="oferta-arrow prev" type="button" aria-label="Anterior">&#8249;</button>
+                <div class="oferta-dots" role="tablist">
+                    <button class="oferta-dot is-active" type="button" aria-label="Oferta 1"></button>
+                    <button class="oferta-dot" type="button" aria-label="Oferta 2"></button>
+                    <button class="oferta-dot" type="button" aria-label="Oferta 3"></button>
+                </div>
+                <button class="oferta-arrow next" type="button" aria-label="Pr√≥ximo">&#8250;</button>
+            </div>
+        </section>
 
-      <section id="projetos" class="section">
-        <div class="section-header">
-          <h2>Projetos</h2>
-          <p>Adicione seus trabalhos principais aqui.</p>
-        </div>
-        <div class="projects">
-          <article class="project-card">
-            <div class="project-thumb">Projeto 01</div>
-            <h3>Landing Page Moderna</h3>
-            <p>DescriÁ„o curta do projeto, tecnologias usadas e objetivo principal.</p>
-            <a class="link" href="#">Ver detalhes</a>
-          </article>
-          <article class="project-card">
-            <div class="project-thumb">Projeto 02</div>
-            <h3>Dashboard Responsivo</h3>
-            <p>Resumo do projeto com foco em dados, UX e performance.</p>
-            <a class="link" href="#">Ver detalhes</a>
-          </article>
-          <article class="project-card">
-            <div class="project-thumb">Projeto 03</div>
-            <h3>PortfÛlio Criativo</h3>
-            <p>Site pessoal com animaÁıes leves e identidade visual.</p>
-            <a class="link" href="#">Ver detalhes</a>
-          </article>
-        </div>
-      </section>
+        <!-- SE√á√ÉO DE PROJETOS -->
+        <section id="projetos">
+            <div class="projetos-heading" data-title="Meus projetos">
+                <h2>Meus projetos</h2>
+            </div>
+            <div class="projetos-list">
+                <article class="projeto-row">
+                    <div class="projeto-thumb" aria-hidden="true"></div>
+                    <h3 class="projeto-titulo">Meu portif√≥lio</h3>
+                    <a class="projeto-acao" href="#">Ver Detalhes</a>
+                </article>
 
-      <section id="contato" class="section">
-        <div class="section-header">
-          <h2>Contato</h2>
-          <p>Vamos conversar sobre seu prÛximo projeto.</p>
-        </div>
-        <div class="contact">
-          <div class="contact-card">
-            <h3>Entre em contato</h3>
-            <p>Use os canais abaixo ou personalize com seus links reais.</p>
-            <ul>
-              <li><strong>Email:</strong> seuemail@exemplo.com</li>
-              <li><strong>LinkedIn:</strong> linkedin.com/in/usuario</li>
-              <li><strong>GitHub:</strong> github.com/usuario</li>
-            </ul>
-          </div>
-          <form class="contact-form">
-            <label>
-              Nome
-              <input type="text" name="nome" placeholder="Seu nome" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="seuemail@exemplo.com" />
-            </label>
-            <label>
-              Mensagem
-              <textarea name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
-            </label>
-            <button class="btn" type="button">Enviar</button>
-          </form>
-        </div>
-      </section>
+                <article class="projeto-row">
+                    <div class="projeto-thumb" aria-hidden="true"></div>
+                    <h3 class="projeto-titulo">Saas de Barbearia</h3>
+                    <a class="projeto-acao" href="#">Ver Detalhes</a>
+                </article>
+
+                <article class="projeto-row">
+                    <div class="projeto-thumb" aria-hidden="true"></div>
+                    <h3 class="projeto-titulo">Galeria interativa</h3>
+                    <a class="projeto-acao" href="#">Ver Detalhes</a>
+                </article>
+            </div>
+
+            <div class="projeto-cta-card">
+                <div>
+                    <h3>Tem algum projeto em mente?</h3>
+                    <p>Estou dispon√≠vel para freelancer</p>
+                </div>
+                <a class="projeto-acao" href="mailto:seu-email@exemplo.com">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    Email
+                </a>
+            </div>
+        </section>
+
+        <!-- SE√á√ÉO POR QUE ME CONTRATAR -->
+        <section id="porque-contratar">
+            <h2>Por que me contratar?</h2>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Dedicado</h3>
+                    <p>Compromisso total com cada projeto e prazos</p>
+                </div>
+
+                <div class="diferencial-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Comunicativo</h3>
+                    <p>Mant√©m voc√™ sempre informado sobre o progresso</p>
+                </div>
+
+                <div class="diferencial-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Cooperativo</h3>
+                    <p>Trabalha bem em equipe e aceita feedback</p>
+                </div>
+
+                <div class="diferencial-card">
+                    <i class="fas fa-smile"></i>
+                    <h3>Otimista</h3>
+                    <p>Sempre buscando solu√ß√µes criativas e inovadoras</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SE√á√ÉO FERRAMENTAS E HABILIDADES -->
+        <section id="habilidades">
+            <div class="habilidades-heading" data-title="Habilidades">
+                <h2>Ferramentas e Habilidades</h2>
+            </div>
+            <div class="habilidades-grid">
+                <div class="habilidade-item">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+
+                <div class="habilidade-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+
+                <div class="habilidade-item">
+                    <i class="fab fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+
+                <div class="habilidade-item">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SE√á√ÉO FALE COMIGO -->
+        <section id="contato">
+            <div class="contato-wrap">
+                <div class="contato-content">
+                    <h2>Fale comigo</h2>
+                    <p>Para neg√≥cios ou parcerias, entre em contato comigo.</p>
+                    <div class="contato-info">
+                        <div class="contato-item">
+                            <span class="contato-icon"><i class="fas fa-phone"></i></span>
+                            <div>
+                                <span class="contato-label">Phone</span>
+                                <span class="contato-value">+55 (98) 98235-2965</span>
+                            </div>
+                        </div>
+
+                        <div class="contato-item">
+                            <span class="contato-icon"><i class="fas fa-envelope"></i></span>
+                            <div>
+                                <span class="contato-label">Email</span>
+                                <a class="contato-value" href="mailto:Phelipeibbn@gmail.com">Phelipeibbn@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contato-item">
+                            <span class="contato-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <span class="contato-label">Endere√ßo</span>
+                                <span class="contato-value">S√£o Lu√≠s - Maranh√£o</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© 2026 PhelipeDev. Todos os direitos reservados.</p>
+    <!-- RODAP√â -->
+    <footer>
+        <p class="footer-brand">Site por Phelipe Matos</p>
+        <p class="footer-links"><a href="mailto:Phelipeibbn@gmail.com">Email</a> | <a href="https://linkedin.com">LinkedIn</a></p>
+        <p class="footer-rights">&copy; 2026 Phelipe Matos. Todos os direitos reservados.</p>
     </footer>
-
     <script>
-      const toggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.menu');
+        const offerCards = Array.from(document.querySelectorAll('.oferta-card'));
+        const offerDots = Array.from(document.querySelectorAll('.oferta-dot'));
+        const prevBtn = document.querySelector('.oferta-arrow.prev');
+        const nextBtn = document.querySelector('.oferta-arrow.next');
 
-      toggle.addEventListener('click', () => {
-        const open = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!open));
-        menu.classList.toggle('open');
-      });
+        if (offerCards.length) {
+            let activeIndex = Math.max(0, offerCards.findIndex((card) => card.classList.contains('is-active')));
+
+            const setActive = (index) => {
+                activeIndex = (index + offerCards.length) % offerCards.length;
+                offerCards.forEach((card, idx) => {
+                    const isActive = idx === activeIndex;
+                    card.classList.toggle('is-active', isActive);
+                    card.classList.toggle('is-dim', !isActive);
+                    card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                });
+                offerDots.forEach((dot, idx) => {
+                    dot.classList.toggle('is-active', idx === activeIndex);
+                });
+            };
+
+            offerCards.forEach((card, idx) => {
+                card.addEventListener('click', () => setActive(idx));
+            });
+            offerDots.forEach((dot, idx) => {
+                dot.addEventListener('click', () => setActive(idx));
+            });
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => setActive(activeIndex - 1));
+            }
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => setActive(activeIndex + 1));
+            }
+
+            setActive(activeIndex);
+        }
     </script>
-  </body>
+</body>
 </html>
+
