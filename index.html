@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phelipe Matos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        document.documentElement.classList.add('reveal-enabled');
+    </script>
     <link rel="stylesheet" href="Style.css">
     <!-- Font Awesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,8 +23,7 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#English Version">English Version</a></li>
-                <li><a href="#Entre em contato" class="contato">Entre em contato</a></li>
+                <li><a href="mailto:phelipeibbn@gmail.com" class="contato">Entre em contato</a></li>
             </ul>
         </nav>
     </header>
@@ -26,28 +31,31 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
         <section id="inicio">
-            <div class="container-texto">
+            <span id="sobre" class="anchor-offset" aria-hidden="true"></span>
+            <div class="container-texto reveal">
                 <h2>Olá</h2>
                 <h2 class="titulo-principal">Me chamo, <span class="nome-destaque">Phelipe Matos.</span></h2>
                 <h3>Desenvolvedor Front-End</h3>
                 <p>Sou um desenvolvedor web apaixonado por criar experiências digitais rápidas, responsivas e com foco em performance. Tenho sólida experiência em projetos profissionais utilizando tecnologias modernas como HTML5, CSS3, JavaScript, React.js e Tailwind CSS. Sou apaixonado por desenvolver componentes reutilizáveis, Design Systems, animações fluidas e por evoluir continuamente a performance e acessibilidade das aplicações web.</p>
                 <hr class="linha-divisoria">
-                <button>Download CV</button>
-                <button>Mais</button>
+                <div class="cta-group">
+                    <a class="cta-btn cta-primary" href="Curriculo%20Phelipe%20Dos%20Santos%20Matos.pdf" download="Curriculo Phelipe Dos Santos Matos.pdf">Currículo</a>
+                    <button class="cta-btn cta-secondary js-mais" type="button">Mais</button>
+                </div>
             </div>
-            <div class="container-imagem">
+            <div class="container-imagem reveal">
                 <img src="Fundo roxo.png" alt="Foto de Phelipe Matos com fundo roxo">
-                                <div class="redes-container">
+                                <div class="redes-container" id="redes-sociais">
                                     <div class="redes-wrapper">
                                         <span class="redes-label">Redes Sociais</span>
                                         <div class="redes-sociais">
-                                            <a class="icon-circle linkedin" href="https://linkedin.com/in/seu-linkedin" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                            <a class="icon-circle linkedin" href="https://www.linkedin.com/in/phelipe-dos-santos-matos-7897752b5/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                                                 <i class="fab fa-linkedin"></i>
                                             </a>
-                                            <a class="icon-circle instagram" href="https://instagram.com/seu-instagram" target="_blank" rel="noopener noreferrer" title="Instagram">
+                                            <a class="icon-circle instagram" href="https://www.instagram.com/phelipemtos/" target="_blank" rel="noopener noreferrer" title="Instagram">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
-                                            <a class="icon-circle whatsapp" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                                            <a class="icon-circle whatsapp" href="https://wa.me/5598982352965?text=Vim%20pelo%20seu%20site" target="_blank" rel="noopener noreferrer" title="WhatsApp">
                                                 <i class="fab fa-whatsapp"></i>
                                             </a>
                                         </div>
@@ -56,8 +64,8 @@
             </div>
         </section>
 
-        <section id="O que eu ofereço" class="oferta-section-wrap">
-            <div class="oferta-header">
+        <section id="oferta" class="oferta-section-wrap">
+            <div class="oferta-header reveal">
                 <span class="oferta-eyebrow">O que eu ofereço</span>
                 <h2 class="oferta-title">
                     <span>Crio designs profissionais de sites</span>
@@ -66,26 +74,26 @@
                 <div class="oferta-divider" aria-hidden="true"></div>
             </div>
             <div class="oferta-cards" role="list">
-                <button class="oferta-card is-dim" type="button" aria-pressed="false">
+                <button class="oferta-card is-dim reveal" type="button" aria-pressed="false">
                     <div class="oferta-icon">
                         <i class="fas fa-pen-nib"></i>
                     </div>
                     <span class="oferta-card-label">Design de Conteúdo Web</span>
                 </button>
-                <button class="oferta-card is-active" type="button" aria-pressed="true">
+                <button class="oferta-card is-active reveal" type="button" aria-pressed="true">
                     <div class="oferta-icon">
                         <i class="fas fa-chart-pie"></i>
                     </div>
                     <span class="oferta-card-label">Design de app mobile</span>
                 </button>
-                <button class="oferta-card is-dim" type="button" aria-pressed="false">
+                <button class="oferta-card is-dim reveal" type="button" aria-pressed="false">
                     <div class="oferta-icon">
                         <i class="fas fa-desktop"></i>
                     </div>
                     <span class="oferta-card-label">Web Design</span>
                 </button>
             </div>
-            <div class="oferta-nav" aria-label="Navegação de ofertas">
+            <div class="oferta-nav reveal" aria-label="Navegação de ofertas">
                 <button class="oferta-arrow prev" type="button" aria-label="Anterior">&#8249;</button>
                 <div class="oferta-dots" role="tablist">
                     <button class="oferta-dot is-active" type="button" aria-label="Oferta 1"></button>
@@ -98,35 +106,45 @@
 
         <!-- SEÇÃO DE PROJETOS -->
         <section id="projetos">
-            <div class="projetos-heading" data-title="Meus projetos">
+            <div class="projetos-heading reveal" data-title="Meus projetos">
                 <h2>Meus projetos</h2>
             </div>
             <div class="projetos-list">
-                <article class="projeto-row">
-                    <div class="projeto-thumb" aria-hidden="true"></div>
-                    <h3 class="projeto-titulo">Meu portifólio</h3>
-                    <a class="projeto-acao" href="#">Ver Detalhes</a>
-                </article>
-
-                <article class="projeto-row">
-                    <div class="projeto-thumb" aria-hidden="true"></div>
-                    <h3 class="projeto-titulo">Saas de Barbearia</h3>
-                    <a class="projeto-acao" href="#">Ver Detalhes</a>
-                </article>
-
-                <article class="projeto-row">
-                    <div class="projeto-thumb" aria-hidden="true"></div>
-                    <h3 class="projeto-titulo">Galeria interativa</h3>
-                    <a class="projeto-acao" href="#">Ver Detalhes</a>
+                <article class="projeto-row reveal">
+                    <div class="projeto-thumb" aria-hidden="true">
+                        <div class="hero-mockup hero-mockup--thumb">
+                            <div class="hero-logo">
+                                <span>Phelipe</span>
+                                <span>Matos</span>
+                            </div>
+                            <div class="hero-preview" aria-hidden="true">
+                                <span class="hero-preview-line is-strong"></span>
+                                <span class="hero-preview-line"></span>
+                                <span class="hero-preview-line"></span>
+                                <span class="hero-preview-line short"></span>
+                            </div>
+                            <span class="hero-tag">Portfólio</span>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3 class="projeto-titulo">Meu portifólio</h3>
+                        <p class="projeto-descricao">Portfólio responsivo com foco em performance, animações suaves e apresentação profissional.</p>
+                        <div class="projeto-tools" aria-label="Ferramentas utilizadas">
+                            <span class="projeto-tool"><i class="fab fa-html5" aria-hidden="true"></i><span>HTML5</span></span>
+                            <span class="projeto-tool"><i class="fab fa-css3-alt" aria-hidden="true"></i><span>CSS3</span></span>
+                            <span class="projeto-tool"><i class="fab fa-js-square" aria-hidden="true"></i><span>JavaScript</span></span>
+                        </div>
+                    </div>
+                    <a class="projeto-acao" href="https://phelipematos.github.io/" target="_blank" rel="noopener noreferrer">Ver portifólio</a>
                 </article>
             </div>
 
-            <div class="projeto-cta-card">
+            <div class="projeto-cta-card reveal">
                 <div>
                     <h3>Tem algum projeto em mente?</h3>
                     <p>Estou disponível para freelancer</p>
                 </div>
-                <a class="projeto-acao" href="mailto:seu-email@exemplo.com">
+                <a class="projeto-acao" href="mailto:phelipeibbn@gmail.com">
                     <i class="fas fa-envelope" aria-hidden="true"></i>
                     Email
                 </a>
@@ -135,27 +153,27 @@
 
         <!-- SEÇÃO POR QUE ME CONTRATAR -->
         <section id="porque-contratar">
-            <h2>Por que me contratar?</h2>
+            <h2 class="reveal">Por que me contratar?</h2>
             <div class="diferenciais-grid">
-                <div class="diferencial-card">
+                <div class="diferencial-card reveal">
                     <i class="fas fa-heart"></i>
                     <h3>Dedicado</h3>
                     <p>Compromisso total com cada projeto e prazos</p>
                 </div>
 
-                <div class="diferencial-card">
+                <div class="diferencial-card reveal">
                     <i class="fas fa-comments"></i>
                     <h3>Comunicativo</h3>
                     <p>Mantém você sempre informado sobre o progresso</p>
                 </div>
 
-                <div class="diferencial-card">
+                <div class="diferencial-card reveal">
                     <i class="fas fa-handshake"></i>
                     <h3>Cooperativo</h3>
                     <p>Trabalha bem em equipe e aceita feedback</p>
                 </div>
 
-                <div class="diferencial-card">
+                <div class="diferencial-card reveal">
                     <i class="fas fa-smile"></i>
                     <h3>Otimista</h3>
                     <p>Sempre buscando soluções criativas e inovadoras</p>
@@ -165,26 +183,26 @@
 
         <!-- SEÇÃO FERRAMENTAS E HABILIDADES -->
         <section id="habilidades">
-            <div class="habilidades-heading" data-title="Habilidades">
+            <div class="habilidades-heading reveal" data-title="Habilidades">
                 <h2>Ferramentas e Habilidades</h2>
             </div>
             <div class="habilidades-grid">
-                <div class="habilidade-item">
+                <div class="habilidade-item reveal">
                     <i class="fab fa-html5"></i>
                     <p>HTML</p>
                 </div>
 
-                <div class="habilidade-item">
+                <div class="habilidade-item reveal">
                     <i class="fab fa-css3-alt"></i>
                     <p>CSS</p>
                 </div>
 
-                <div class="habilidade-item">
+                <div class="habilidade-item reveal">
                     <i class="fab fa-figma"></i>
                     <p>Figma</p>
                 </div>
 
-                <div class="habilidade-item">
+                <div class="habilidade-item reveal">
                     <i class="fab fa-js-square"></i>
                     <p>JavaScript</p>
                 </div>
@@ -194,11 +212,11 @@
         <!-- SEÇÃO FALE COMIGO -->
         <section id="contato">
             <div class="contato-wrap">
-                <div class="contato-content">
+                <div class="contato-content reveal">
                     <h2>Fale comigo</h2>
                     <p>Para negócios ou parcerias, entre em contato comigo.</p>
                     <div class="contato-info">
-                        <div class="contato-item">
+                        <div class="contato-item reveal">
                             <span class="contato-icon"><i class="fas fa-phone"></i></span>
                             <div>
                                 <span class="contato-label">Phone</span>
@@ -206,7 +224,7 @@
                             </div>
                         </div>
 
-                        <div class="contato-item">
+                        <div class="contato-item reveal">
                             <span class="contato-icon"><i class="fas fa-envelope"></i></span>
                             <div>
                                 <span class="contato-label">Email</span>
@@ -214,7 +232,7 @@
                             </div>
                         </div>
 
-                        <div class="contato-item">
+                        <div class="contato-item reveal">
                             <span class="contato-icon"><i class="fas fa-map-marker-alt"></i></span>
                             <div>
                                 <span class="contato-label">Endereço</span>
@@ -228,7 +246,7 @@
     </main>
 
     <!-- RODAPÉ -->
-    <footer>
+    <footer class="reveal">
         <p class="footer-brand">Site por Phelipe Matos</p>
         <p class="footer-links"><a href="mailto:Phelipeibbn@gmail.com">Email</a> | <a href="https://linkedin.com">LinkedIn</a></p>
         <p class="footer-rights">&copy; 2026 Phelipe Matos. Todos os direitos reservados.</p>
@@ -269,6 +287,53 @@
             }
 
             setActive(activeIndex);
+        }
+
+        const maisBtn = document.querySelector('.js-mais');
+        const redesWrapper = document.querySelector('.redes-wrapper');
+
+        if (maisBtn && redesWrapper) {
+            const highlightClass = 'is-highlight';
+            let highlightTimer;
+
+            maisBtn.addEventListener('click', () => {
+                if (highlightTimer) {
+                    clearTimeout(highlightTimer);
+                }
+
+                redesWrapper.classList.remove(highlightClass);
+                void redesWrapper.offsetWidth;
+                redesWrapper.classList.add(highlightClass);
+
+                highlightTimer = setTimeout(() => {
+                    redesWrapper.classList.remove(highlightClass);
+                }, 1000);
+            });
+        }
+
+        const revealItems = Array.from(document.querySelectorAll('.reveal'));
+
+        if (revealItems.length) {
+            revealItems.forEach((item, index) => {
+                const baseDelay = Number.parseFloat(item.dataset.revealDelay || '0');
+                const stagger = Math.min(index % 6, 5) * 0.08;
+                item.style.setProperty('--reveal-delay', `${(baseDelay + stagger).toFixed(2)}s`);
+            });
+
+            if ('IntersectionObserver' in window) {
+                const revealObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.18, rootMargin: '0px 0px -10% 0px' });
+
+                revealItems.forEach((item) => revealObserver.observe(item));
+            } else {
+                revealItems.forEach((item) => item.classList.add('is-visible'));
+            }
         }
     </script>
 </body>
